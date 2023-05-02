@@ -12,6 +12,9 @@
         android:theme="@style/Theme.Myfirst"
         tools:targetApi="31">
         <activity
+            android:name=".ds"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
