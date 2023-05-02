@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">myfirst</string>
+    <string name="materials_T">Materials Suppliers</string>
+    <string name="textview1">Dulsha Senavirathna</string>
+    <string name="textview2">www.dulsharulzz@gmail.com</string>
+    <string name="textview3">Edit Profile</string>
+    <string name="textview4">calculate dashbord</string>
+    <string name="textview5">MY PAYMENT DETAILS</string>
+    <string name="textview6">MY PAYMENT DETAILS</string>
+
+</resources>
