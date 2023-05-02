@@ -1,5 +1,4 @@
 # BuildMate_App_IT21357930
-
 Group Name-IT21357930_WD_G01_02 
  
 Application Topic-Construction helper app 
