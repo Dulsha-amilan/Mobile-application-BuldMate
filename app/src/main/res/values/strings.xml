@@ -8,4 +8,83 @@
     <string name="textview5">MY PAYMENT DETAILS</string>
     <string name="textview6">MY PAYMENT DETAILS</string>
 
+
+    //sign In
+    <string name="username_text">User Name</string>
+    <string name="signin_username">User Name</string>
+    <string name="password_signin_text">Password</string>
+    <string name="signin_password">Password</string>
+    <string name="signup_now_text">Don\'t have an account? Sign Up Now</string>
+    <string name="signin_permission_text">We need permission for the service use</string>
+    <string name="signin_learnmore">Learn more</string>
+
+    //Sign Up
+    <string name="f_name">first Name</string>
+    <string name="first_name_input">First Name</string>
+
+    <string name="signup_lastname_text">Last Name</string>
+    <string name="signup_last_name">Last Name</string>
+
+    <string name="sign_up_email_text">Email</string>
+    <string name="signup_email">email</string>
+
+    <string name="signup_password_text">Password</string>
+    <string name="signup_pasward">email</string>
+
+    <string name="signin_text">Have an account ? sign In </string>
+    <string name="permission_text">We need permission for the service use Learn more</string>
+
+    //skill_employee_profile
+    <string name="profile_Name_display">Chathura</string>
+
+    <string name="profile_name">Name</string>
+    <string name="pro_name_view">Chathura Lakshan</string>
+
+    <string name="profile_email">Email</string>
+    <string name="pro_email_view">rkchathura@gmail.com</string>
+
+    <string name="profile_desctription">Descrition</string>
+    <string name="profile_dsctription">i am a paint bas. i from malabe town.
+        I have spent years honing my craft as a construction painter,
+        and I have worked on a wide range of projects throughout
+        my career. From small residential jobs to large-scale commercial projects,
+        I have the knowledge and expertise to tackle even the most challenging painting tasks.
+        I am committed to delivering exceptional quality and service to all of my clients,
+        and I am proud of the reputation I have built in the industry.</string>
+
+    //plastring
+    <string name="plaster_view_bar">Plastring</string>
+    <string name="palster_headline">PLASTER CALCULATION</string>
+
+    <string name="unit_text">Unit</string>
+    <string name="meter">Meter/CM</string>
+
+    <string name="plaster_type_text">Plaster Type</string>
+    <string name="plaster_type">number</string>
+
+    <string name="length_text">Length</string>
+    <string name="length">number</string>
+
+    <string name="width_text">Width</string>
+    <string name="width">number</string>
+
+    <string name="result_text">RESULTS</string>
+
+    <string name="cement_txt">Cement</string>
+    <string name="cement_count">0</string>
+    <string name="bag_text">Bags</string>
+
+    <string name="sand_text">Sand</string>
+    <string name="sand_count">0</string>
+    <string name="ton_text">Ton</string>
+
+    //home_plastering
+    <string name="home_emp_description">i am a paint bas.
+        i from malabe town.I have spent years honing my craft as a
+        construction painter, and I have worked on a wide range of
+        projects throughout my career.From small residential jobs
+        to large-scale </string>
+    <string name="password">Password</string>
+    <string name="plastring">Plastring</string>
+
 </resources>
