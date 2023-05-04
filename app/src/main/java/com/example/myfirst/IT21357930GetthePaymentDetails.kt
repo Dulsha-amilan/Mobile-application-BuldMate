@@ -4,8 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 class IT21357930GetthePaymentDetails : AppCompatActivity() {
-    private lateinit var  binding: ActivityMainBinding
-    private lateinit var  database:DatabaseReference
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
