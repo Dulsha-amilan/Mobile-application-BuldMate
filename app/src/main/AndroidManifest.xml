@@ -12,6 +12,12 @@
         android:theme="@style/Theme.Myfirst"
         tools:targetApi="31">
         <activity
+            android:name=".IT21357930GetthePaymentDetails"
+            android:exported="false" />
+        <activity
+            android:name=".IT21357930CustomerRegistration"
+            android:exported="false" />
+        <activity
             android:name=".DD"
             android:exported="false" />
         <activity

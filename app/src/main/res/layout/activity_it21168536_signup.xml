@@ -10,14 +10,14 @@
         android:id="@+id/signup_bg1"
         android:layout_width="685dp"
         android:layout_height="734dp"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="104dp"
         android:layout_marginEnd="1dp"
+        android:contentDescription="TODO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/bgr1"
-        android:contentDescription="TODO" />
+        app:srcCompat="@drawable/bgr1" />
 
     <TextView
         android:id="@+id/signin_text"
@@ -102,11 +102,11 @@
         android:id="@+id/design1"
         android:layout_width="93dp"
         android:layout_height="223dp"
-        android:layout_marginStart="364dp"
+        android:layout_marginStart="360dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401"
+        app:layout_constraintVertical_bias="0.391"
         app:srcCompat="@drawable/cecl4" />
 
     <ImageView
