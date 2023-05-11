@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Paymentget">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="IT21357930payment">
+
+        <!-- Credit Card Details -->
+        <TextView
+            android:id="@+id/paytTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#048A9C"
+            android:padding="16dp"
+            android:paddingRight="100dp"
+            android:text="Payment "
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="364dp"
+            android:layout_height="179dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="41dp"
+            android:background="#E4ECEC"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+        <EditText
+            android:id="@+id/cardHoderName"
+            android:layout_width="270dp"
+            android:layout_height="51dp"
+            android:layout_marginStart="76dp"
+            android:layout_marginEnd="130dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Card Holder Name"
+            android:textColor="#888686"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.215"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <EditText
+            android:id="@+id/card_number"
+            android:layout_width="272dp"
+            android:layout_height="56dp"
+            android:hint="Card Number"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.432"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardHoderName" />
+
+
+        <EditText
+            android:id="@+id/card_date"
+            android:layout_width="130dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="60dp"
+            android:hint="date"
+            android:inputType="date"
+            android:maxLines="1"
+            android:padding="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/card_number" />
+
+        <EditText
+            android:id="@+id/card_cvv"
+            android:layout_width="130dp"
+            android:layout_height="61dp"
+            android:hint="CVV"
+            android:inputType="number"
+            android:maxLines="1"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintStart_toEndOf="@+id/card_date"
+            app:layout_constraintTop_toBottomOf="@+id/card_number" />
+
+        <!-- Items -->
+
+        <!-- Item Count and Total Amount -->
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="197dp"
+            android:layout_height="125dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"
+            android:background="#E4ECEC"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.074"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <LinearLayout
+                android:id="@+id/item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="Items"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/item_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Item Count"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:minHeight="48dp"
+                    android:paddingRight="16dp" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="171dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:background="#E4ECEC"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/scrollView2"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount: $0"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="397dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+
+
+            <Button
+                android:id="@+id/pay_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#009688"
+                android:text="pay" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="288dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="63dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/paytTopic"
+            app:srcCompat="@drawable/newww" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+
+            android:layout_marginTop="30dp"
+            android:background="#FFC107"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/home" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/advertisement" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/notification" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/account" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
