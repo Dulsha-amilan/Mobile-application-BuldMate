@@ -1,17 +1,38 @@
-package com.example.myfirst
+package com.example.clickin.activities
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
+import com.example.clickin.R
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var btnInsertData: Button
+    private lateinit var btnFetchData: Button
+
+
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_it21168536_signin)
-//        setContentView(R.layout.my_details)
-//        setContentView(R.layout.activity_it21168536_signup)
-        setContentView(R.layout.activity_it21357930_getthe_payment_details)
+        setContentView(R.layout.activity_main)
+
+
+        btnInsertData = findViewById(R.id.btnInsertData)
+        btnFetchData = findViewById(R.id.btnFetchData)
+
+
+        btnInsertData.setOnClickListener {
+            val intent = Intent(this, InsertionActivity::class.java)
+            startActivity(intent)
+        }
+
+        btnFetchData.setOnClickListener {
+            val intent = Intent(this, FetchingActivity::class.java)
+            startActivity(intent)
+        }
+     
 
     }
-
 }
