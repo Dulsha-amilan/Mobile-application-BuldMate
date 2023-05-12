@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="34dp"
         android:layout_marginTop="-35dp"
-        android:text="@string/my_details_H"
+        android:text="@string/update_details"
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -38,6 +38,7 @@
             android:orientation="vertical"
             android:textAlignment="center">
 
+            <!--<?xml version="1.0" encoding="utf-8"?>-->
             <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -49,7 +50,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:layout_marginTop="20dp"
-                    android:hint="Customer Name"
+                    android:hint="Supplier Name"
                     android:inputType="textPersonName" />
 
                 <EditText
@@ -58,7 +59,7 @@
                     android:layout_height="48dp"
                     android:layout_marginTop="20dp"
                     android:ems="10"
-                    android:hint="Customer Age" />
+                    android:hint="Supplier Age" />
 
                 <EditText
                     android:id="@+id/etEmpSalary"
@@ -66,7 +67,7 @@
                     android:layout_height="48dp"
                     android:layout_marginTop="20dp"
                     android:ems="10"
-                    android:hint="Customer Home Adderss"
+                    android:hint="Supplier Salary"
                     android:inputType="textPersonName" />
                 <EditText
                     android:id="@+id/etEmpSkills"
@@ -74,7 +75,7 @@
                     android:layout_height="48dp"
                     android:layout_marginTop="20dp"
                     android:ems="10"
-                    android:hint="Customer PhoneNumber"
+                    android:hint="Employee Skills"
                     android:inputType="textPersonName" />
                 <EditText
                     android:id="@+id/etEmpEmail"
@@ -82,7 +83,7 @@
                     android:layout_height="48dp"
                     android:layout_marginTop="20dp"
                     android:ems="10"
-                    android:hint="Customer Email"
+                    android:hint="Employee Email"
                     android:inputType="textPersonName" />
                 <Button
                     android:id="@+id/btnUpdateData"
@@ -90,11 +91,94 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:text="Update Data"
+                    android:text="Update   Data"
                     android:backgroundTint="#15BDD2"/>
 
 
             </LinearLayout>
+
+<!-- -&#45;&#45;&#45;&#45;-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_NAME"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="50dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_NAME"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_ADDRESS"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_ADDRESS"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_PHONE"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_PHONE"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_EMAIL"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_EMAIL"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_PASSWORD"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_PASSWORD"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_USER"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_USER"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/my_details_EDIT"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="50dp"-->
+            <!--                android:backgroundTint="#15BDD2"-->
+            <!--                android:text="@string/my_details_EDIT"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginRight="10dp"/>-->
         </LinearLayout>
     </LinearLayout>
 
@@ -146,11 +230,6 @@
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
-
-
-
-
-
 
 <!--<?xml version="1.0" encoding="utf-8"?>-->
 <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->

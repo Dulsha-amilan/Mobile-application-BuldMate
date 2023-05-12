@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="34dp"
         android:layout_marginTop="-35dp"
-        android:text="@string/my_details_H"
+        android:text="@string/activity_E_D"
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -51,11 +51,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:text="Update"
+                    android:backgroundTint="#15BDD2"
                     app:layout_constraintEnd_toStartOf="@+id/btnDelete"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/linearLayout"
-                    android:backgroundTint="#15BDD2"/>
+                    app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
                 <Button
                     android:id="@+id/btnDelete"
@@ -63,11 +63,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="30dp"
                     android:text="Delete"
+                    android:backgroundTint="#15BDD2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toEndOf="@+id/btnUpdate"
-                    app:layout_constraintTop_toBottomOf="@id/linearLayout"
-                    android:backgroundTint="#15BDD2"/>
+                    app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
                 <LinearLayout
                     android:id="@+id/linearLayout"
@@ -102,7 +102,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="CusIdID"
+                                android:text="Emp id"
                                 android:textColor="@color/black"
                                 android:textSize="15sp" />
 
@@ -151,7 +151,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="Cus Name"
+                                android:text="Emp Name"
                                 android:textColor="@color/black"
                                 android:textSize="15sp" />
 
@@ -201,7 +201,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:gravity="center"
-                                android:text="CusAge"
+                                android:text="Emp Age"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
 
@@ -256,7 +256,7 @@
                                 android:layout_gravity="center"
 
                                 android:gravity="center"
-                                android:text="Homeaddress"
+                                android:text="Emp Salary"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
 
@@ -308,7 +308,7 @@
                                 android:layout_gravity="center"
 
                                 android:gravity="center"
-                                android:text="PhoneNumber"
+                                android:text="Emp Skills"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
 
@@ -360,7 +360,7 @@
                                 android:layout_gravity="center"
 
                                 android:gravity="center"
-                                android:text="Cus Email"
+                                android:text="Emp Email"
                                 android:textColor="@color/black"
                                 android:textSize="15sp"
 
@@ -392,6 +392,90 @@
                 </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <!-- -&#45;&#45;&#45;&#45;&#45;&#45;-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_NAME"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="50dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_NAME"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_ADDRESS"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_ADDRESS"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_PHONE"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_PHONE"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_EMAIL"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_EMAIL"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_PASSWORD"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_PASSWORD"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_USER"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_USER"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/my_details_EDIT"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="50dp"-->
+            <!--                android:backgroundTint="#15BDD2"-->
+            <!--                android:text="@string/my_details_EDIT"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginRight="10dp"/>-->
         </LinearLayout>
     </LinearLayout>
 
@@ -443,25 +527,6 @@
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--<?xml version="1.0" encoding="utf-8"?>-->

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background4"
@@ -17,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="34dp"
         android:layout_marginTop="-35dp"
-        android:text="@string/enter_supplier_details"
+        android:text="@string/activity_insert_data"
         android:textAlignment="center"
         android:textSize="20dp"
         android:textStyle="bold" />
@@ -38,22 +39,21 @@
             android:orientation="vertical"
             android:textAlignment="center">
 
-            <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:padding="16dp"
+
                 tools:context=".activities.InsertionActivity">
 
                 <ImageView
                     android:id="@+id/imageView"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:src="@drawable/background"
+                    android:src="#FFFFFFFF"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -63,7 +63,7 @@
                     android:layout_height="48dp"
                     android:layout_marginTop="50dp"
                     android:ems="10"
-                    android:hint="Enter Customer Name"
+                    android:hint="Enter name"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -76,7 +76,7 @@
                     android:layout_marginTop="20dp"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:hint="Enter Customer age"
+                    android:hint="Enter age"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/etEmpName" />
@@ -88,7 +88,7 @@
                     android:layout_marginTop="20dp"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:hint="Enter Customer Home Adderss"
+                    android:hint="Enter salary"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/etEmpAge" />
@@ -100,7 +100,7 @@
                     android:layout_marginTop="20dp"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:hint="Enter Customer PhoneNumber"
+                    android:hint="Enter Skills"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/etEmpSalary" />
@@ -112,26 +112,129 @@
                     android:layout_marginTop="20dp"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:hint="Enter Customer Email"
+                    android:hint="Enter Email"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/etEmpSkills"/>
 
                 <Button
+                    android:id="@+id/button3"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="BACK"
+                    android:backgroundTint="#15BDD2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSave"
+                    app:layout_constraintVertical_bias="0.05" />
+
+                <Button
                     android:id="@+id/btnSave"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="50dp"
                     android:layout_marginTop="32dp"
                     android:text="Save Data"
+                    android:backgroundTint="#15BDD2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/etEmpEmail"
-                    android:backgroundTint="#15BDD2"/>
+                    app:layout_constraintTop_toBottomOf="@+id/etEmpEmail" />
+
+
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
+            <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_NAME"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="50dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_NAME"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_ADDRESS"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_ADDRESS"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_PHONE"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_PHONE"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_EMAIL"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_EMAIL"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_PASSWORD"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_PASSWORD"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/my_details_USER"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="32dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginRight="10dp"-->
+            <!--                android:text="@string/my_details_USER"-->
+
+            <!--                android:textSize="20sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <Button-->
+            <!--                android:id="@+id/my_details_EDIT"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="50dp"-->
+            <!--                android:backgroundTint="#15BDD2"-->
+            <!--                android:text="@string/my_details_EDIT"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_marginRight="10dp"/>-->
         </LinearLayout>
+
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -181,25 +284,6 @@
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
