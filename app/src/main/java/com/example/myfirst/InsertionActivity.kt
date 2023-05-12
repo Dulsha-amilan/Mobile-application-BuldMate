@@ -1,5 +1,6 @@
 package com.example.clickin.activities
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -18,6 +19,7 @@ class InsertionActivity : AppCompatActivity() {
     private lateinit var etEmpSkills: EditText
     private lateinit var etEmpEmail: EditText
     private lateinit var btnSaveData: Button
+    private lateinit var button3:Button
 
     private lateinit var dbRef: DatabaseReference
 
@@ -31,11 +33,17 @@ class InsertionActivity : AppCompatActivity() {
         etEmpSkills = findViewById(R.id.etEmpSkills)
         etEmpEmail = findViewById(R.id.etEmpEmail)
         btnSaveData = findViewById(R.id.btnSave)
+        button3 = findViewById(R.id.button3)
 
         dbRef = FirebaseDatabase.getInstance().getReference("Employees")
 
         btnSaveData.setOnClickListener {
             saveEmployeeData()
+        }
+
+        button3.setOnClickListener {
+            val intent = Intent(this, MyProfileActivity::class.java)
+            startActivity(intent)
         }
     }
 
@@ -48,7 +56,7 @@ class InsertionActivity : AppCompatActivity() {
         val empSkills = etEmpSkills.text.toString()
         val empEmail = etEmpEmail.text.toString()
 
-        if (empName.isEmpty()) {
+        if(empName.isEmpty() || empAge.isEmpty() || empSalary.isEmpty() || empSkills.isEmpty() || empEmail.isEmpty() ){if (empName.isEmpty()) {
             etEmpName.error = "Please enter name"
         }
         if (empAge.isEmpty()) {
@@ -62,25 +70,26 @@ class InsertionActivity : AppCompatActivity() {
         }
         if (empEmail.isEmpty()) {
             etEmpEmail.error = "Please enter email"
+        }}
+        else {
+            val empId = dbRef.push().key!!
+
+            val employee = EmployeeModel(empId, empName, empAge, empSalary, empSkills, empEmail)
+
+            dbRef.child(empId).setValue(employee)
+                .addOnCompleteListener {
+                    Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_LONG).show()
+
+                    etEmpName.text.clear()
+                    etEmpAge.text.clear()
+                    etEmpSalary.text.clear()
+                    etEmpSkills.text.clear()
+                    etEmpEmail.text.clear()
+
+                }.addOnFailureListener { err ->
+                    Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
+                }
         }
-        val empId = dbRef.push().key!!
-
-        val employee = EmployeeModel(empId, empName, empAge, empSalary, empSkills, empEmail)
-
-        dbRef.child(empId).setValue(employee)
-            .addOnCompleteListener {
-                Toast.makeText(this, "Data inserted successfully", Toast.LENGTH_LONG).show()
-
-                etEmpName.text.clear()
-                etEmpAge.text.clear()
-                etEmpSalary.text.clear()
-                etEmpSkills.text.clear()
-                etEmpEmail.text.clear()
-
-            }.addOnFailureListener { err ->
-                Toast.makeText(this, "Error ${err.message}", Toast.LENGTH_LONG).show()
-            }
-
     }
 
 }
